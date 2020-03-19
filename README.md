@@ -54,7 +54,7 @@ docker-compose up
 
 [POST] http://localhost:8000/changePassword?username=jack/tom/rob
 
-Note: The "username" parameter passed relies on the USERNAME environment you can find in docker-compose.yml
+Note: The "username" parameter passed relies on the USERNAME environment variable you can find in docker-compose.yml.
 
 ## Metrics of load balancer machine
 [GET] http://localhost:8000/metrics
