@@ -47,9 +47,11 @@ docker-compose up
 
 ## APIs
 [GET] http://localhost:8000/
+
 [GET] http://localhost:8000/login
 
 [POST] http://localhost:8000/register?username=jack/tom/rob
+
 [POST] http://localhost:8000/changePassword?username=jack/tom/rob
 
 Note: The "username" parameter passed relies on the USERNAME environment you can find in docker-compose.yml
