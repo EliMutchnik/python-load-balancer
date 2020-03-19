@@ -1,0 +1,25 @@
+version: '3'
+services:
+  load_balancer: 
+    image: lb-main:latest
+    container_name: load_balancer
+    ports:
+      - 8000:8000
+
+  server1:
+    image: lb-app:latest
+    container_name: server1
+    environment:
+      - USERNAME=jack
+
+  server2:
+    image: lb-app:latest
+    container_name: server2
+    environment:
+      - USERNAME=tom
+
+  server3:
+    image: lb-app:latest
+    container_name: server3
+    environment:
+      - USERNAME=rob
